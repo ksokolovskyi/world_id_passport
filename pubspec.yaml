@@ -1,0 +1,43 @@
+name: world_id_passport
+description: "World ID Passport made with Flutter"
+publish_to: 'none'
+version: 1.0.0
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+  flutter: '>=3.16.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: 5.1.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/globe.png
+    - assets/images/stamp_mask.png
+    - assets/images/texture_mask.png
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+    - family: SFMono
+      fonts:
+        - asset: assets/fonts/SFMono-Regular.otf
+          weight: 400
+        - asset: assets/fonts/SFMono-Medium.otf
+          weight: 500
+    - family: SpaceMono
+      fonts:
+        - asset: assets/fonts/SpaceMono-Regular.ttf
+          weight: 400
