@@ -1,11 +1,10 @@
 name: world_id_passport
-description: "World ID Passport made with Flutter"
-publish_to: 'none'
+description: World ID Passport made with Flutter
+publish_to: none
 version: 1.0.0
 
 environment:
-  sdk: '>=3.2.3 <4.0.0'
-  flutter: '>=3.16.0'
+  sdk: ^3.9.2
 
 dependencies:
   flutter:
@@ -14,7 +13,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  very_good_analysis: 5.1.0
+  very_good_analysis: 10.0.0
 
 flutter:
   uses-material-design: true

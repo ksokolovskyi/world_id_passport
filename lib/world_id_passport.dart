@@ -23,13 +23,15 @@ class _WorldIdPassportState extends State<WorldIdPassport>
     reverseCurve: Curves.easeOut,
   );
 
-  late final _coverPageAnimation = Tween<double>(begin: 0, end: 1).animate(
-    CurveTween(curve: const Interval(0, 0.9)).animate(_curvedAnimation),
-  );
+  late final Animation<double> _coverPageAnimation =
+      Tween<double>(begin: 0, end: 1).animate(
+        CurveTween(curve: const Interval(0, 0.9)).animate(_curvedAnimation),
+      );
 
-  late final _middlePageAnimation = Tween<double>(begin: 0, end: 1).animate(
-    CurveTween(curve: const Interval(0.15, 1)).animate(_curvedAnimation),
-  );
+  late final Animation<double> _middlePageAnimation =
+      Tween<double>(begin: 0, end: 1).animate(
+        CurveTween(curve: const Interval(0.15, 1)).animate(_curvedAnimation),
+      );
 
   bool get _isClosed => _controller.status == AnimationStatus.dismissed;
 

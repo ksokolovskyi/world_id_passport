@@ -82,9 +82,11 @@ class _AssetImageMaskState extends State<AssetImageMask> {
         if (_shader == null || bounds != _cachedBounds) {
           _shader?.dispose();
 
-          final matrix4 = Matrix4.identity().scaled(
+          final matrix4 = Matrix4.identity().scaledByDouble(
             bounds.width / image.width,
             bounds.height / image.height,
+            1,
+            1,
           );
 
           _cachedBounds = bounds;

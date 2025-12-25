@@ -86,9 +86,9 @@ class _CustomGradientTransform extends GradientTransform {
     final originY = -sinRadians * center.dx + oneMinusCosRadians * center.dy;
 
     return Matrix4.identity()
-      ..translate(originX, originY)
+      ..translateByDouble(originX, originY, 0, 1)
       ..rotateZ(radians)
-      ..scale(1.0, 0.5);
+      ..scaleByDouble(1, 0.5, 1, 1);
   }
 }
 
@@ -99,7 +99,7 @@ class _WavesPainter extends CustomPainter {
     const peaksCount = 11;
 
     final paint = Paint()
-      ..color = Colors.white.withOpacity(0.2)
+      ..color = Colors.white.withValues(alpha: 0.2)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1.5;
 

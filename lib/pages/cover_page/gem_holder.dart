@@ -173,8 +173,9 @@ class _GemHolderPainter extends CustomPainter {
   }
 
   void _drawShadow(Canvas canvas, Rect circleRect, BoxShadow shadow) {
-    final shadowBounds =
-        circleRect.shift(shadow.offset).inflate(shadow.spreadRadius);
+    final shadowBounds = circleRect
+        .shift(shadow.offset)
+        .inflate(shadow.spreadRadius);
 
     canvas.drawCircle(
       shadowBounds.center,

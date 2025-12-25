@@ -126,9 +126,9 @@ class _MainPageBodyPainter extends CustomPainter {
     // Page title drawing.
     final fontSize = height * 0.0269;
     final textStyle = this.textStyle.copyWith(
-          fontSize: fontSize,
-          letterSpacing: fontSize * 0.013,
-        );
+      fontSize: fontSize,
+      letterSpacing: fontSize * 0.013,
+    );
 
     final topPadding = height * 0.0465;
 
